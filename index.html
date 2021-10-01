@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./images/logo-F-icon.png" />
+    <script
+      src="https://kit.fontawesome.com/049c2c6974.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Code Points</title>
+
+    <!-- TOGGLE NAVBAR-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#icon").click(function () {
+          $("ul").toggleClass("show");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav>
+      <a href="#"><img src="./images/logo-noBg.png" alt="logo" /></a>
+
+      <ul id="nav-ul">
+        <li><a href="">Home</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#about-us">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <label id="icon">
+        <i id="ic2" onclick="reChange('ic2')" class="fas fa-bars"></i>
+      </label>
+    </nav>
+
+    <section class="home">
+      <div class="home-text">
+        <h2><span>Improve your</span> <br />business with <br />one click</h2>
+        <button>Try now</button>
+      </div>
+
+      <div class="img-div">
+        <img src="./images/Ilustration.svg" alt="image" />
+      </div>
+    </section>
+
+    <section class="offers" id="offers">
+      <h2>OFFERS</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>create a website</h3>
+          <p>
+            We will create a 3 pages, fully responsive website for you or your
+            bussines.
+          </p>
+          <div class="price">
+            <p>Price</p>
+            <h5>60$</h5>
+          </div>
+          <a href="cards.html">Learn more</a>
+        </div>
+
+        <div class="card">
+          <h3>create a website</h3>
+          <p>
+            We will create a 5 pages, fully responsive website for you or your
+            bussines.
+          </p>
+          <div class="price">
+            <p>Price</p>
+            <h5>150$</h5>
+          </div>
+          <a href="cards.html">Learn more</a>
+        </div>
+
+        <div class="card">
+          <h3>create a website</h3>
+          <p>
+            We will create a 8 pages, fully responsive website for you or your
+            bussines.
+          </p>
+          <div class="price">
+            <p>Price</p>
+            <h5>250$</h5>
+          </div>
+          <a href="cards.html">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us" id="about-us">
+      <h2>ABOUT US</h2>
+      <div class="about-text">
+        <p>
+          <span
+            >We are a software development company and we provide web services
+            with very reasonable prices and very quality services. We provide
+            these services:</span
+          >
+          <br />
+          <b>1. </b>Web design<br />
+          <b>2. </b>Web development<br />
+          <b>3. </b>Responsive web design<br />
+          <b>4. </b>Psd to Html<br />
+          <b>5. </b>Logo Design<br />
+          <b>6. </b>Graphic Design
+        </p>
+
+        <img src="./images/Group 3.svg" alt="logo" />
+      </div>
+    </section>
+
+    <section class="footer" id="contact">
+      <div class="logo-text">
+        <img src="./images/Group 2.svg" />
+      </div>
+      <div class="contact">
+        <h3>Contact</h3>
+        <input id="name" type="text" placeholder="Name" />
+        <input id="email" type="email" placeholder="Email" /><br />
+        <input id="message" type="text" placeholder="Message" /><br />
+        <button id="submit" type="submit">Send</button>
+      </div>
+      <i class="fab fa-facebook-f"></i>
+    </section>
+
+    <footer>
+      <p>© Designed by Code Points</p>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
